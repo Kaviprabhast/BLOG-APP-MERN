@@ -1,0 +1,79 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+.create-blog-form {
+  margin-top: 300px;
+  width:500px;
+  background: rgba(255, 255, 255, 0.9); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+#ci, #ct {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+#ct {
+  resize: vertical;
+  width: 300px;
+  height: 100px;
+}
+
+#ci:focus, #ct:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.cbtn {
+  width: 40%;
+  margin-left: 100px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.cbtn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .create-blog-form {
+      width: 90%;
+      padding: 15px;
+  }
+}

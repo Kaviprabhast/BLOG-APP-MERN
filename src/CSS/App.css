@@ -1,0 +1,40 @@
+  body
+  {
+    background-image: url("https://t3.ftcdn.net/jpg/03/01/90/18/360_F_301901899_lalLiJJTviVxRPTpJ8ShYIe6TcpLbFqC.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .btn {
+    background-color: orange; 
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-left: 600px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease; 
+    outline: none;
+    animation: fadeIn 1s ease-in-out; 
+  }
+ 
+  .btn:hover {
+    background-color: orangered; 
+    transform: scale(1.1); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

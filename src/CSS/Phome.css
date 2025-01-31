@@ -1,0 +1,55 @@
+#phome {
+    width: 90%;
+    max-width: 1200px;
+    margin: 1300px auto 20px; 
+    padding: 20px;
+    text-align: center;
+  }
+  @keyframes changeFont {
+    0% { font-family: 'Arial', sans-serif; }
+    33% { font-family: 'Courier New', monospace; }
+    66% { font-family: 'Georgia', serif; }
+    100% { font-family: 'Arial', sans-serif; }
+  }
+  
+  .phome #ph1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    animation: changeFont 5s infinite alternate ease-in-out;
+  }
+
+  .phbtn {
+    background: #007bff;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .phbtn:hover {
+    background: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .home {
+      width: 95%;
+      margin-top: 120px;
+      padding: 15px;
+    }
+  
+    .home h1 {
+      font-size: 2rem;
+    }
+
+    .phbtn {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+    }
+  }
+  

@@ -1,0 +1,113 @@
+.my-blogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 700px; 
+}
+
+.my-blogs ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 400px;
+  gap: 20px; 
+}
+
+.my-blogs li {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 320px; 
+  text-align: center;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease-in-out;
+}
+
+.my-blogs li:hover {
+  transform: scale(1.05);
+}
+
+.my-blogs h3 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.my-blogs p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.my-blogs em {
+  font-style: italic;
+  color: #777;
+}
+
+@media (max-width: 1024px) {
+  .my-blogs ul {
+    justify-content: center; 
+  }
+}
+
+@media (max-width: 768px) {
+  .my-blogs ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-blogs li {
+    width: 90%; 
+  }
+}
+
+.blog-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.update-btn, .delete-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.update-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.update-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #a71d2a;
+  transform: scale(1.05);
+}
+
+.save-btn{
+  background-color: #007bff;
+  color:white;
+  width: 100px;
+  height: 50px;
+  border-radius: 20%;
+  transform: scale(1.05);
+  border-color: #007bff;
+}
+

@@ -1,0 +1,44 @@
+.footer-container {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  animation:  colorChange 5s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #fff;
+  }
+  25% {
+    color: #ff5733;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #0000ff;
+  }
+  100% {
+    color: #fff;
+  }
+}
