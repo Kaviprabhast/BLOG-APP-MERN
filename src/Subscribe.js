@@ -11,7 +11,7 @@ const Subscribe = () => {
     const [subscribedEmails, setSubscribedEmails] = useState([]); 
 
     useEffect(() => {
-        fetch('http://localhost:4000/subscribers')
+        fetch('https://blog-app-mern-back-8b2y.onrender.com/subscribers')
             .then(response => response.json())
             .then(data => setSubscribedEmails(data.subscribers))
             .catch(error => console.error('Error fetching subscribers:', error));
@@ -23,7 +23,7 @@ const Subscribe = () => {
         subscribeAudio.play();
 
         try {
-            const response = await fetch('http://localhost:4000/subscribe', {
+            const response = await fetch('https://blog-app-mern-back-8b2y.onrender.com/subscribe', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email }),
@@ -49,7 +49,7 @@ const Subscribe = () => {
         unsubscribeAudio.play();
 
         try {
-            const response = await fetch('http://localhost:4000/unsubscribe', {
+            const response = await fetch('https://blog-app-mern-back-8b2y.onrender.com/unsubscribe', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email: emailToRemove }),

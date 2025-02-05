@@ -13,7 +13,7 @@ export default function LoginPage() {
     ev.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:4000/login", {
+      const response = await fetch("https://blog-app-mern-back-8b2y.onrender.com/login", {
         method: "POST",
         body: JSON.stringify({ username, password }),
         headers: { "Content-Type": "application/json" },

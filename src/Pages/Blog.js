@@ -18,7 +18,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch("http://localhost:4000/blogs");
+        const response = await fetch("https://blog-app-mern-back-8b2y.onrender.com/blogs");
         if (!response.ok) throw new Error("Failed to fetch blogs");
         const data = await response.json();
         setBlogs(data.blogs);
@@ -36,7 +36,7 @@ const Blog = () => {
     if (!window.confirm("Are you sure you want to delete this blog?")) return;
 
     try {
-      const response = await fetch(`http://localhost:4000/blogs/${blogId}`, {
+      const response = await fetch(`https://blog-app-mern-back-8b2y.onrender.com/blogs/${blogId}`, {
         method: "DELETE",
       });
       const data = await response.json();
@@ -68,7 +68,7 @@ const Blog = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:4000/blogs/${editingBlog}`, {
+      const response = await fetch(`https://blog-app-mern-back-8b2y.onrender.com/blogs/${editingBlog}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedBlog),
